@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://printjs-4de6.kxcdn.com/print.min.css">
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="user">
+                <div class="user__avatar">
+                    <img src="images/my_photo_menu.png" alt="">
+                </div>
+                <div class="user__content">
+                    <div class="user__name">
+                        Arseniy<br>Astashevich
+                    </div>
+                    <div class="user__prof">Automation QA Engineer</div>
+                </div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#about">about me</a>
+                <a class="nav__link" href="#intro">contact</a>
+                <a class="nav__link  nav__link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
+            </nav>
+
+            <button class="burger" type="button" id="navToggle">
+                <img class="burger__icon" src="images/menu.svg" alt="">
+            </button>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Intro -->
+<section class="intro" id="intro">
+    <div class="container">
+
+        <div class="intro__inner">
+            <div class="intro__content">
+                <h2 class="intro__subtitle">Hello i'm</h2>
+                <h1 class="intro__title">Arseniy Astashevich</h1>
+                <div class="intro__text">Automation QA Engineer</div>
+
+                <div class="social">
+                    <a class="social__link" href="https://github.com/Astashevich" target="_blank">
+                        <img src="images/github.png" alt="">
+                    </a>
+                    <a class="social__link" href="https://www.linkedin.com/in/astash" target="_blank">
+                        <img src="images/In.png" alt="">
+                    </a>
+                    <a class="social__link" href="https://www.instagram.com/arseniy_astashevich" target="_blank">
+                        <img src="images/Instagram.png" alt="">
+                    </a>
+                </div>
+
+                <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
+            </div>
+
+            <img class="intro__photo" src="images/my_photo.png" alt="">
+        </div><!-- /.intro__inner -->
+
+    </div><!-- /.container -->
+</section>
+
+
+
+<!-- About -->
+<section class="about" id="about">
+    <div class="container">
+
+        <div class="about__inner">
+            <div class="about__photo">
+                <img class="img" src="images/my_designer_photo1.png" alt="">
+            </div>
+
+            <div class="about__content">
+                <h3 class="about__title">about me</h3>
+                <h2 class="about__bigtitle">WHO AM I</h2>
+                <div class="about__text">
+                    <p>Have graduated from the courses of manual and automatic testing. Experience of 2 months in Automation Testing using Selenium. Want to start career of a  automation QA engeneer and in 4 years to be a team-leader. I've got  good analytical skills. Easy to learn and work well in a team.</p>
+                    <p>Perfectionist, leader, like to dance, lived in North America, have successful experience in testing online games, fond of sport, a winner of several ice hockey championships.</p>
+                    <p>This month I have completed a course on "Manual and automated software testing". I have no experience in this field, but I am absolutely ready to explore something new for me.I really want to develop  professionally and improve my knowledge and skills.</p>
+                </div>
+                <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
+            </div><!-- /.about__content -->
+        </div><!-- /.about__inner -->
+
+    </div><!-- /.container -->
+</section>
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer__inner">
+            <div class="footer__credits">
+                <div class="footer__copyright">
+                    &copy; 2021 UI43 - Free Templates
+                </div>
+
+                <div class="footer__social">
+                    <a href="https://github.com/Astashevich" target="_blank">
+                        <img src="images/github-icon-gray.svg" width="24" alt="">
+                    </a>                    
+                    </a>
+                    <a href="https://www.linkedin.com/in/astash" target="_blank">
+                        <img src="images/linkedin-gray.svg" width="18" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/arseniy_astashevich" target="_blank">
+                        <img src="images/instagram-gray.svg" width="18" alt="">
+                    </a>
+                </div>
+            </div><!-- /.footer__credits -->
+
+            <nav class="footer__nav" id="navi">
+                <a class="footer__nav-link" href="#about">About me</a>
+                <a class="footer__nav-link" href="#intro">Contact</a>
+                <a class="footer__nav-link  footer__nav-link--btn" href="#">Hire me</a>
+            </nav>
+        </div><!-- /.footer__inner -->
+
+    </div><!-- /.container -->
+</footer>
+
+
+
+
+
+<!-- Modals -->
+<div class="modal" id="modal_resume">
+    <div class="modal__dialog" >
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/close_icon.svg" alt="Close">
+        </button>
+
+        <div class="modal__content" id="print-content">
+            <h3 class="modal__title  text-center">RESUME</h3>
+
+            <div class="text-center print_hidden">
+                <a class="btn btn--thin" id="download_pdf" href="#">DOWNLOAD PDF</a>
+                <a class="btn btn--thin" id="print" href="#">PRINT</a>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline__col  timeline__col--left">
+
+                    <h4 class="timeline__title">Skills</h4>
+                    <div class="progress-bar__hard">
+                        <h5 class="timeline__subtitle">Hard Skills</h5>
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Java</div>
+                            </div>
+                            <!-- <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 90%;"></div>
+                                </div>
+                            </div> --> <!-- ->Progress-line --> 
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Maven</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Selenium, TestNG</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; English - B1</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Git: GitHub</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; SQL: MYSQL</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; HTML/CSS, JavaScript</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Understanding of testing, software development process</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Preparation of test documentation: bug reports, test cases, cheklists, test plans, test result reports</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Test managment systems: TestRail, Sitechco, etc.</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Bug tracking systems: Jira, Asana, Mantis</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Testing Web, Desktopp, Mobile apps</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Testing Games</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; API testing: Postman</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Photoshop, 3DSMax</div>
+                            </div>
+                        </div>
+
+                    </div><!-- /.progress-bar -->
+                    <div class="progress-bar">
+                        <h5 class="timeline__subtitle">Soft Skills</h5>
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Positive team player</div>
+                            </div>
+                            <!-- <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 90%;"></div>
+                                </div>
+                            </div> --> <!-- ->Progress-line --> 
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Purposeful</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Willingness to learn and grow as a professional</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Ability to listen</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Time management</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Able to work in stressful situations and support multitasking</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">&#8226; Confident in my ability to come up with interesting ideas</div>
+                            </div>
+                        </div>
+
+                    </div><!-- /.progress-bar -->
+
+                    <h4 class="timeline__title">EDUCATION</h4>
+                    <div class="timeline__bar-none">
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="09-01-2021">2015 - 2020</time>
+                            <h5 class="timeline__subtitle">Specialist's Degree in Engineering</h5>
+                            <div class="timeline__position">Belarusian National Technical University (BNTU)</div>
+                        </div>
+    
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">February - September 2021</time>
+                            <h5 class="timeline__subtitle">Manual and automated software testing</h5>
+                            <div class="timeline__position">IT academy "Step"</div>
+                        </div>
+                    </div><!-- /.timeline__bar -->
+
+                    <!-- <h4 class="timeline__title">Languages</h4>
+
+                        <div class="timeline__item">
+                            <h5 class="timeline__subtitle">English</h5>
+                            <div class="timeline__position">B1</div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <h5 class="timeline__subtitle">English</h5>
+                            <div class="timeline__position">B1</div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <h5 class="timeline__subtitle">English</h5>
+                            <div class="timeline__position">B1</div>
+                        </div> -->
+
+                </div>
+
+
+
+                <div class="timeline__col  timeline__col--right">
+
+                    <h4 class="timeline__title">SUMMARY</h4>
+                    <div class="progress-bar">
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title__left">
+                                    Have graduated from the courses of manual and automatic testing. Experience of 2 months in Automation Testing using Selenium. Want to start career of a  automation QA engeneer and in 4 years to be a team-leader. I've got  good analytical skills. Easy to learn and work well in a team.</div>
+                            </div>
+                        </div>
+
+                    </div><!-- /.progress-bar -->
+                    
+                    <h4 class="timeline__title">EXPERIENCE</h4>
+                    <div class="timeline__bar">
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">August 2020 - <b>Present</b></time>
+                            <h5 class="timeline__subtitle">7holmov</h5>
+                            <div class="timeline__position">Engineer</div>
+                            <div class="timeline__text">
+                                <p>
+                                    &#8226; Making commercial offers <br>
+                                    &#8226; Work with technical specifications <br>
+                                    &#8226; Compilation of equipment bases <br>
+                                    Have improved commercial offers. Created a  Excel sheet for the organization to track utility costs.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">April 2020 - August 2020</time>
+                            <h5 class="timeline__subtitle">GTA5RP "REDAGE"</h5>
+                            <div class="timeline__position">Tester</div>
+                            <div class="timeline__text">
+                                <p>
+                                    &#8226; Testing servers new feauters <br>
+                                    &#8226; Bug reports 
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">April 2015 - April 2020</time>
+                            <h5 class="timeline__subtitle">Ice Hockey</h5>
+                            <div class="timeline__position">Professional hockey player</div>
+                            <div class="timeline__text">
+                                <p>
+                                    &#8226; Winner of several ice hockey world championships <br>
+                                    &#8226; Winner of several belarusian ice hockey championships
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.timeline__bar -->
+
+                    <h4 class="timeline__title">ABOUT ME</h4>
+                    <div class="progress-bar-none">
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title__left">
+                                    Perfectionist, leader, like to dance, lived in North America, have successful experience in testing online games, fond of sport, a winner of several ice hockey championships.</div>
+                            </div>
+                        </div>
+
+                    </div><!-- /.progress-bar -->
+
+
+                    <!-- <h4 class="timeline__title">Awards</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2010</time>
+                        <h5 class="timeline__subtitle">UI/UX Design</h5>
+                        <div class="timeline__position">LA University, USA</div>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis in facilis eum quae sint aliquam, ipsam?</p>
+                        </div>
+                    </div> -->
+                </div><!-- /.timeline__col -->
+
+            </div><!-- /.timeline -->
+
+            <div class="text-center">
+                <a class="btn print_hidden" href="#" data-modal="#modal_hire_me">Hire me</a>
+            </div>
+
+        </div><!-- /.modal__content -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal" id="modal_hire_me">
+    <div class="modal__dialog  modal__dialog--sm">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/close_icon.svg" alt="Close">
+        </button>
+
+        <div class="contact" id="contact_window">
+            <div class="contact__left">
+                <h3 class="modal__title mb-0">LET'S TALK!</h3>
+                <h4 class="modal__subtitle">CALL ME OR SEND ME A REQUEST</h4>
+
+                <ul class="contact__info">
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="images/phone.svg" alt="">
+                        375-29-13-222-13
+                    </li>
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="images/mail.svg" alt="">
+                        <a href="mailto:ars.astashevich@gmail.com">ars.astashevich@gmail.com</a> 
+                    </li>
+                </ul>
+
+                <form class="form" action="/" method="post" id="form">
+                    <div class="form__group">
+                        <label class="form__label" for="input-email">Adress e-mail</label>
+                        <input class="form__input _req _email" name="input-email" type="text" id="input-email" placeholder="Adress e-mail">
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label" for="input-text">Request</label>
+                        <textarea class="form__textarea _req" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
+                    </div>
+
+                    <div class="text-right">
+                        <button class="btn" type="submit">SEND</button>
+                    </div>
+                </form>
+            </div><!-- /.contact__left -->
+        </div><!-- /.contact -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+<script src="js/app.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
