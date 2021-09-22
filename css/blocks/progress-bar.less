@@ -1,0 +1,52 @@
+// main: ../style.less
+
+.progress-bar {
+    text-align: right;
+    margin-bottom: 1.6rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(106,105,107,0.3);
+
+    &-none {
+        border-bottom: 0px;
+    }
+}
+
+.progress-bar__hard {
+    margin-bottom: 1rem;
+}
+
+.progress-bar__item {
+    
+    align-items: center;
+    margin-bottom: .3rem;
+}
+
+.progress-bar__title {
+    font-size: .94rem;
+    font-weight: 300;
+}
+
+.progress-bar__title__left {
+    text-align: left;
+    font-size: .94rem;
+    font-weight: 300;
+}
+
+.progress-bar__right {
+    padding-left: 1.2rem;
+}
+
+.progress-bar__bar {
+    width: 139px;
+    height: 6px;
+
+    background-color: #EFEFEF;
+}
+
+.progress-bar__progress {
+    height: 100%;
+
+    background-color: @gray;
+
+    transition: width .2s linear;
+}
