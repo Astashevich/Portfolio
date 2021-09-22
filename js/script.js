@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         // if (error === 0) {
         //     form.classList.add('_sending');
-        //     let responce = await fetch('form', {
+        //     let responce = await fetch('sendmail.php', {
         //         method: 'POST',
         //         body: formData
         //     });
